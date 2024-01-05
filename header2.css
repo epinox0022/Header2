@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
+
+.lettinggo {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 43px 10px;
+  position: fixed;
+  z-index: 1;
+}
+
+.lettinggo::before {
+  content: "";
+  border-top: 5px solid #ff9d20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+
+}
+
+.lettinggo ul {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+}
+
+.lettinggo li {
+  list-style: none;
+}
+
+.lettinggo a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  color: #000;
+  transition: all 0.25s ease;
+  display: block;
+}
+
+.lettinggo li:hover a {
+  color: #ff9d20;
+}
+
+#king {
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.lettinggo h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.nope {
+  font-weight: 900;
+  line-height: 2rem;
+}
+
+img {
+  background-position: left;
+  background-size: cover;
+  width: 100%;
+
+  /* This height has no use on this img */
+  /* height: auto;  */
+
+}
+
+.free-call {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
